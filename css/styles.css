@@ -163,11 +163,11 @@ a {
 }
 
 .icon-container {
-    width: 64px;
-    height: 64px;
+    align-items: center;
     background-color: #f3f9fa;
     border-radius: 50%;
     display: inline-flex;
+    height: 64px;
     justify-content: center;
-    align-items: center;
+    width: 64px;
 }
