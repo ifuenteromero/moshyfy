@@ -212,6 +212,15 @@ a {
     text-transform: uppercase;
     white-space: nowrap;
     margin: 1rem 0;
+    outline: 0;
+}
+
+
+.btn .icon {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1rem;
+    vertical-align: middle;
 }
 
 .btn--primary {
@@ -301,7 +310,7 @@ a {
 .input-group .input {
     border: 0;
     flex-grow: 1;
-    padding: 1.5rem 1rem;
+    padding: 1.5rem 2rem;
 }
 
 .input-group .btn {
@@ -595,7 +604,7 @@ a {
 
 .block {
     --padding-vertical: 6rem;
-    padding: 6rem 2rem;
+    padding: var(--padding-vertical) 2rem;
 }
 
 .block__heading {
@@ -719,5 +728,31 @@ a {
     .hero__content {
         text-align: left;
         align-self: center;
+    }
+}
+
+/* BLOCK DOMAIN */
+
+.block-domain .input-group {
+    box-shadow: 0 0 30px 20px #e6ebee;
+    border: 0;
+    margin: 4rem auto;
+    max-width: 670px;
+}
+
+.block-domain__prices {
+    font-weight: 600;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 6rem);
+    justify-items: center;
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+    .block-domain__prices {
+        grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
     }
 }
